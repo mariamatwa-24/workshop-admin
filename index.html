@@ -3,19 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>منصة المديرة | ورشة المبرمج الصغير</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>منصة المديرة</h1>
-  <p>ورشة المبرمج الصغير</p>
+  <header>
+    <h1>منصة المديرة 👩‍💼</h1>
+    <p>ورشة المبرمج الصغير</p>
+  </header>
 
-  <h2>مرحبًا بكِ في لوحة الإدارة 👩‍💼</h2>
+  <main class="container">
 
-  <p>
-    من هنا ستتم إدارة الطلاب والدروس والفيديوهات والنتائج.
-  </p>
+    <h2>لوحة التحكم</h2>
+
+    <div class="dashboard">
+
+      <div class="card">
+        <h3>👥 الطلاب</h3>
+        <p>إدارة حسابات وبيانات الطلاب.</p>
+        <button onclick="openStudents()">إدارة الطلاب</button>
+      </div>
+
+      <div class="card">
+        <h3>📚 الكورسات والدروس</h3>
+        <p>إضافة وإدارة الدروس والكورسات.</p>
+        <button onclick="openCourses()">إدارة الدروس</button>
+      </div>
+
+      <div class="card">
+        <h3>🎬 الفيديوهات</h3>
+        <p>إدارة محتوى الفيديوهات التعليمية.</p>
+        <button onclick="openVideos()">إدارة الفيديوهات</button>
+      </div>
+
+      <div class="card">
+        <h3>📊 النتائج</h3>
+        <p>متابعة نتائج وتقدم الطلاب.</p>
+        <button onclick="openResults()">عرض النتائج</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
