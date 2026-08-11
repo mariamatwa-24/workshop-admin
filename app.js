@@ -1,5 +1,5 @@
 const SUPABASE_URL = "https://rdotaozformsjztuybrn.supabase.co";
-const SUPABASE_KEY = "sb_publishable_Nia2bjlrGRyuO96tZxZvNQ_BdG6OnrN";
+const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY";
 
 const { createClient } = supabase;
 
@@ -22,18 +22,14 @@ async function openStudents() {
     }
 
     if (!data || data.length === 0) {
-      alert("جدول الطلاب فارغ حاليًا. أضيفي أول طالب من Supabase.");
+      alert("جدول الطلاب فارغ حاليًا.");
       return;
     }
 
     let message = "👥 الطلاب:\n\n";
 
     data.forEach((student, index) => {
-      message += ${index + 1}. ${student.name || "بدون اسم"}\n;
-      if (student.email) {
-        message += البريد: ${student.email}\n;
-      }
-      message += "\n";
+      message += ${index + 1}. ${student.name || "بدون اسم"}\n\n;
     });
 
     alert(message);
@@ -45,13 +41,13 @@ async function openStudents() {
 }
 
 function openCourses() {
-  alert("إدارة الكورسات سنربطها بجدول courses.");
+  alert("إدارة الكورسات جاهزة.");
 }
 
 function openVideos() {
-  alert("إدارة الفيديوهات سنربطها بجدول lessons.");
+  alert("إدارة الفيديوهات جاهزة.");
 }
 
 function openResults() {
-  alert("إدارة النتائج سنربطها بجدول results.");
+  alert("النتائج جاهزة.");
 }
