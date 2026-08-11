@@ -1,23 +1,25 @@
-const adminName = "مديرة ورشة المبرمج الصغير";
+const SUPABASE_URL = "https://rdotaozformsjztuybrn.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_Nia2bjlrGRyuO96tZxZvNQ_BdG6OnrN";
 
-function showMessage(message) {
-  alert(message);
-}
+const { createClient } = supabase;
+
+const client = createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
 
 function openStudents() {
-  showMessage("قسم إدارة الطلاب جاهز للتوصيل بقاعدة البيانات.");
+  alert("إدارة الطلاب جاهزة للربط بقاعدة البيانات.");
 }
 
 function openCourses() {
-  showMessage("قسم الكورسات والدروس جاهز.");
+  alert("إدارة الكورسات جاهزة.");
 }
 
 function openVideos() {
-  showMessage("قسم الفيديوهات جاهز.");
+  alert("إدارة الفيديوهات جاهزة.");
 }
 
 function openResults() {
-  showMessage("قسم النتائج جاهز.");
+  alert("النتائج جاهزة.");
 }
-
-console.log(${adminName} - Admin Platform);
